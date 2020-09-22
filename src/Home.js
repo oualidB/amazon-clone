@@ -6,7 +6,7 @@ const IMAGE_URL =
 function Home() {
   return (
     <div className="home">
-      <img classNAme="home__image" src={IMAGE_URL} alt="" />
+      <img className="home__image" src={IMAGE_URL} alt="" />
     </div>
   );
 }
