@@ -1,14 +1,18 @@
 export const initialState = {
-  basket: [],
+  basket: ["oualid"],
 };
 
 function reducer(state, action) {
+  console.log(action);
   switch (action.type) {
     case "ADD_TO_BASKET":
       //logic for adding item to basket
-      break;
+      return {
+        ...state,
+        basket: [...state.basket, action.payload],
+      };
     case "REMOVE_FROM_BASKET":
-      break;
+      return { state };
     default:
       return state;
   }
